@@ -13,7 +13,7 @@
 * git commit \<filename> // 添加到本地库
 * git push // 推送到服务器
 ### 2. 合并提交
-* git add -am "注释" // 之前提交过文件的修改快速提交到本地库
+* git add -am "注释" // tracked文件的修改快速提交到本地库
 ## 三. 撤销
 ### 1. 撤销工作区修改内容
 * git checkout -- \<filename>
