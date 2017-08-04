@@ -1,18 +1,22 @@
-# 一. 配置全局
-## 设置用户名/邮箱
+## 一. 配置全局
+### 1. 设置用户名/邮箱
 * git config --global user.name "zhangsan"
 * git config --global user.email "zhansan@163.com"
-### 修改用户名/邮箱
+### 2. 修改用户名/邮箱
 * git config --global --replace-all user.name "lisi"
 * git config --global --replace-all user.email "lisi@162.com"
-## 查看全局设置
+### 3. 查看全局设置
 * git config --global -l/(list)
-# 二. 提交
-## 1. git add \<filename>
-## 2. git commit \<filename>
-## 3. git push
-# 三. 撤销
-1. 撤销工作区修改内容
+## 二. 提交
+### 1. 分开提交
+* git add \<filename> // 添加到暂存区
+* git commit \<filename> // 添加到本地库
+* git push // 推送到服务器
+### 2. 合并提交
+* git add -am "注释" // 之前提交过文件的修改快速提交到本地库
+## 三. 撤销
+### 1. 撤销工作区修改内容
 * git checkout -- \<filename>
-2. 撤销暂存区修改内容
+### 2. 撤销暂存区修改内容
+* git rm --cached \<filename>
 * git reset HEAD \<filename>
