@@ -28,4 +28,6 @@
 * git reset HEAD \<filename>
 ## 四. 回退版本
 ### 1. git reset --hard HEAD^ 
-回退到上一个版本，--hard表示工作区也恢复
+回退到上一个版本，--hard表示工作区同时恢复, --soft表示版本库回退，但是工作区不回退
+### 2. git reset --hard commit-id
+回退到某个commit-id
