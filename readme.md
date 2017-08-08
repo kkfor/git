@@ -14,9 +14,18 @@
 * git push // 推送到服务器
 ### 2. 合并提交
 * git add -am "注释" // tracked文件的修改快速提交到本地库
+## 三. 查看
+### 1. 查看文件状态
+* git status \<filename>
+### 2. 查看提交记录
+* git log \<filename>
+* git log --pretty=oneline \<filename> // 单行查看
 ## 三. 撤销
 ### 1. 撤销工作区修改内容
-* git checkout -- \<filename>
+* git checkout -- \<filename>  [HEAD~aabbcc]// 用版本库中的版本替换工作区的版本
 ### 2. 撤销暂存区修改内容
 * git rm --cached \<filename>
 * git reset HEAD \<filename>
+## 四. 回退版本
+### 1. git reset --hard HEAD^ 
+回退到上一个版本，--hard表示工作区也恢复
